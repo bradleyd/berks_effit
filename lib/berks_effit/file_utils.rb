@@ -9,7 +9,7 @@ module BerksEffit
                    ::FileUtils.remove_dir(cookbook_directory)
                    puts "you're bersk has been effed!"
                  else
-                   "You have already effit!"
+                   puts "You have already effit!"
                  end
         result
       end
