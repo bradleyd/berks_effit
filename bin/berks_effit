@@ -11,7 +11,7 @@ banner = nil
 OptionParser.new do |opts|
   opts.banner = "Usage: #{__FILE__} [options]"
 
-  opts.on("-d ", "--destroy", "remove cookbooks directory") do |d|
+  opts.on("-d", "--destroy", "remove cookbooks directory") do |d|
     options[:nuke] = d
   end
 

@@ -1,15 +1,15 @@
 require "etc"
-require "fileutils"
 
 module BerksEffit
   class FileUtils
     class << self
       def nuke_cookbook_directory
-        if cookbook_directory_exist?
-          FileUtils.rm_rf(cookbook_directory)
-        else
-          puts "You have already effit!"
-        end
+        result = if cookbook_directory_exist?
+                   Dir.rmdir(cookbook_directory)
+                 else
+                   "You have already effit!"
+                 end
+        result
       end
 
       def cookbook_directory
