@@ -1,6 +1,6 @@
 require_relative "test_helper"
 
-class TestInit
+class TestInit < Minitest::Test
   def setup
     @effit  = BerksEffit::Init.new(nuke: true)
   end

@@ -1,8 +1,9 @@
 require "berks_effit/version"
+require "berks_effit/file_utils"
 
 module BerksEffit
   class Init
-    def initialize(args)
+    def initialize(options)
       @nuke = options.fetch(:nuke)
     end
 
