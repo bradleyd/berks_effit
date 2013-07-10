@@ -6,6 +6,7 @@ module BerksEffit
       def nuke_cookbook_directory
         result = if cookbook_directory_exist?
                    Dir.rmdir(cookbook_directory)
+                   "you're bersk has been effed!"
                  else
                    "You have already effit!"
                  end

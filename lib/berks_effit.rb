@@ -9,7 +9,7 @@ module BerksEffit
 
     # destroy the berks cookbook directory
     def run
-      
+      BerksEffit::FileUtils.nuke_cookbook_directory
     end
   end
 end
