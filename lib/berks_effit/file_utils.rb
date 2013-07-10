@@ -1,11 +1,12 @@
 require "etc"
+require "fileutils"
 
 module BerksEffit
   class FileUtils
     class << self
       def nuke_cookbook_directory
         result = if cookbook_directory_exist?
-                   Dir.rmdir(cookbook_directory)
+                   ::FileUtils.remove_dir(cookbook_directory)
                    "you're bersk has been effed!"
                  else
                    "You have already effit!"
