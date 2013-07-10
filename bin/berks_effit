@@ -1,0 +1,36 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require 'berks_effit'
+require 'optparse'
+
+options = {}
+banner = nil
+
+# set the default option is none are given
+OptionParser.new do |opts|
+  opts.banner = "Usage: #{__FILE__} [options]"
+
+  opts.on("-d ", "--destroy", "remove cookbooks directory") do |d|
+    options[:nuke] = d
+  end
+
+  opts.on_tail("-h", "--help", "Show this message") do
+    puts opts
+    exit
+  end
+  #set current options
+  banner = opts
+
+end.parse!
+
+if options.empty?
+  puts banner
+  exit
+end
+
+
+effit = BerksEffit::Init.new(nuke: options.fetch(:nuke){ false } ) 
+
+effit.run
+
