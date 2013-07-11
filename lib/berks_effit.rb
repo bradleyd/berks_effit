@@ -1,5 +1,5 @@
-require "berks_effit/version"
-require "berks_effit/file_utils"
+require_relative "berks_effit/version"
+require_relative "berks_effit/file_utils"
 
 module BerksEffit
   class Init
