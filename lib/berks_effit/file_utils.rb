@@ -7,9 +7,9 @@ module BerksEffit
       def nuke_cookbook_directory
         result = if cookbook_directory_exist?
                    ::FileUtils.remove_dir(cookbook_directory)
-                   puts "you're bersk has been effed!"
+                   puts "you're berks has been effed!"
                  else
-                   puts "You have already effit!"
+                   puts "You have already effedit!"
                  end
         result
       end
