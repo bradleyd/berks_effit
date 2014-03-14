@@ -2,6 +2,8 @@
 
 Removes ~/.berkshelf/cookbooks
 
+Removes Berksfile.lock in your current working directory (if it exists)
+
 ## Installation
 
 Add this line to your application's Gemfile:
