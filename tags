@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BerksEffit	lib/berks_effit.rb	/^module BerksEffit$/;"	m
+BerksEffit	lib/berks_effit/file_utils.rb	/^module BerksEffit$/;"	m
+BerksEffit	lib/berks_effit/version.rb	/^module BerksEffit$/;"	m
+FileUtils	lib/berks_effit/file_utils.rb	/^  class FileUtils$/;"	c	class:BerksEffit
+Init	lib/berks_effit.rb	/^  class Init$/;"	c	class:BerksEffit
+TestFileUtils	test/file_utils_test.rb	/^class TestFileUtils < Minitest::Test$/;"	c
+TestInit	test/effit_test.rb	/^class TestInit < Minitest::Test$/;"	c
+cookbook_directory	lib/berks_effit/file_utils.rb	/^      def cookbook_directory$/;"	f	class:BerksEffit
+cookbook_directory_exist?	lib/berks_effit/file_utils.rb	/^      def cookbook_directory_exist?$/;"	f	class:BerksEffit
+default_home	lib/berks_effit/file_utils.rb	/^      def default_home$/;"	f	class:BerksEffit
+initialize	lib/berks_effit.rb	/^    def initialize(options)$/;"	f	class:BerksEffit.Init
+nuke_cookbook_directory	lib/berks_effit/file_utils.rb	/^      def nuke_cookbook_directory$/;"	f	class:BerksEffit.FileUtils
+run	lib/berks_effit.rb	/^    def run$/;"	f	class:BerksEffit.Init
+setup	test/effit_test.rb	/^  def setup$/;"	f	class:TestInit
+setup	test/file_utils_test.rb	/^  def setup$/;"	f	class:TestFileUtils
+test_init_should_respond_to_run	test/effit_test.rb	/^  def test_init_should_respond_to_run$/;"	f	class:TestInit
+test_nuke_cookbook_directoy	test/file_utils_test.rb	/^  def test_nuke_cookbook_directoy$/;"	f	class:TestFileUtils
+test_should_find_berks_directory	test/file_utils_test.rb	/^  def test_should_find_berks_directory$/;"	f	class:TestFileUtils
+user_logged_in	lib/berks_effit/file_utils.rb	/^      def user_logged_in$/;"	f	class:BerksEffit
