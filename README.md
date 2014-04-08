@@ -6,6 +6,16 @@ Removes Berksfile.lock in your current working directory (if it exists)
 
 ## Installation
 
+from inside the project 
+
+```rake build```
+
+and then 
+
+```rake install```
+
+* I use this in my global gemset
+
 Add this line to your application's Gemfile:
 
     gem 'berks_effit'
@@ -20,7 +30,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+``` 
+berkseffit -d
+you're Berksfile.lock has been effed!
+you're berks has been effed!
+```
 
 ## Contributing
 
